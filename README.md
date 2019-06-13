@@ -21,9 +21,9 @@ The Text_Disag_project folder contains a few elements:
 2) Your raw data files must be UTF-8 encoded text (.txt) files, placed in the text_data folder
 
 3) You set three initial parameters within the code itself. These are explained at more length in in-code comments.  They are:  
-     i) The text delimiter (a string) (preset to "CHAPTER")
-     ii) If you would like to create subsections from your section (boolean) (preset to TRUE)
-     iii) The subsection size - # of words (integer) (preset to 100, this value is ignored if subsection is set to FALSE)
+     1) The text delimiter (a string) (preset to "CHAPTER")
+     2) If you would like to create subsections from your section (boolean) (preset to TRUE)
+     3) The subsection size - # of words (integer) (preset to 100, this value is ignored if subsection is set to FALSE)
 
 
 ### Using the code
