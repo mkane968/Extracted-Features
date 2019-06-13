@@ -1,6 +1,6 @@
-### Extracted-Features
+### Extracted Features Readme
 
-Text_Disag_project README            last updated May 10, 2019
+Last updated June 13, 2019
 
 This project and code is the result of an initiative by Temple's Digital Scholarship Center to create a method for creating and sharing extracted features (that is, non-consumable versions) of copyrighted work for research purposes. 
 
