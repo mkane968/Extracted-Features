@@ -2,12 +2,10 @@
 
 Text_Disag_project README            last updated May 10, 2019
 
-
-Thank you for using our code!
-
 This project and code is the result of an initiative by Temple's Digital Scholarship Center to create a method for creating and sharing extracted features (that is, non-consumable versions) of copyrighted work for research purposes. 
 
-Contents of this folder:
+### Contents
+
 The Text_Disag_project folder contains a few elements:
 
 1) this README file
@@ -33,7 +31,7 @@ The Text_Disag_project folder contains a few elements:
           (this value is ignored if subsection is set to FALSE)
 
 
-Using the code:
+### Using the code
 
 1) Follow the instructions, above
 
@@ -42,12 +40,12 @@ Using the code:
 3) Delete old results from bags_of_words and matrix_output folders
     (to avoid mixing of old and new outputs
 
-4) Highlight and run the entire code.  Outputs are generated and placed automatically 
+4) Highlight and run the entire code in R Studio.  Outputs are generated and placed automatically 
    in the appropriate folders.  If these folders do not exist, they will be created
    for you.
 
 
-This code is useful for:
+### This code is useful for:
 
 1) Sectioning texts: 
 (for example, sectioning books into chapters for chapter-level analysis)
@@ -63,7 +61,7 @@ Then, the code will separate longer chapters into subsections of equal length, b
 Finally, as above, the word order is re-sorted from the order present in the text to alphabetic.
 
 
-Benefits:
+### Supplemental Benefits:
 
 1) Identification of sections by a regular delimiter:
 
@@ -77,11 +75,3 @@ Some texts do not have regular delimiters, making sectioning on a delimiter impr
 3) Creating "Bags of Words" from consumable content for research
 
 The functional forms of many text data analysis modeling methods (in particular, methods that work from a term-document-frequency matrix) ignore word order.  Also, while it is illegal to share copyrighted material in its consumable (that is, human-readable) form, it IS legal to share the 'extracted features' of these texts.  Word counts, presented as a term-document-frequency matrix or as disaggregated (disordered) word tokens (aka "bags of words"), qualify as one of these extracted features.  Therefore, the output of this code can be shared freely for research purposes in instances where the original texts themselves could not be.  This code is ideal for collaborative projects focused on analysis of copyrighted text for text data mining / cultural analytics purposes.
-
-
-
-Thank you, and please reach out to us if you have further questions about this code, how it works, or how you can use it.
-
-
-The Temple University Scholars Studio
-dsc@temple.edu
