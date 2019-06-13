@@ -48,29 +48,22 @@ The Text_Disag_project folder contains a few elements:
 ### This code is useful for:
 
 1) Sectioning texts: 
-(for example, sectioning books into chapters for chapter-level analysis)
-
-This code can separate one or more long text(s) into smaller pieces, based on a single shared section indicator, or delimiter, shared between all of the texts. It then gives output both of each section as a separate bag-of-words text file (with words re-ordered alphabetically), and also with each section title and section contents in a single .csv file.
-
-Note: if zero instances of the delimiter are present in a text, this code will return the entire contents of that text as one single document.
-
-2) Sub-sectioning the as-identified prior sections of texts further
-
-If the 'use_subchapter' argument in the beginning of this code is set to TRUE, the code will instead perform two steps of analysis.  First, it will section texts based on the common delimiter (exactly as above).  
-Then, the code will separate longer chapters into subsections of equal length, based on the value of the 'subch_threshold' argument.  Word order is maintained at this point, to ensure that each subsection captures the first, second, third... through nth part of each section.  Short sections/chapters will be kept intact.
-Finally, as above, the word order is re-sorted from the order present in the text to alphabetic.
-
-
-### Supplemental Benefits:
-
-1) Identification of sections by a regular delimiter:
 
 It is useful for many research purposes, such as topic modeling, to break texts into smaller pieces.  These methods often works more reliably, and give more accurate results, when applied to many smaller parts of a long text, rather than a few long but complete texts.
 
+This code can separate one or more long text(s) into smaller pieces, based on a single shared section indicator, or delimiter, shared between all of the texts (for example, sectioning books into chapters for chapter-level analysis). It then gives output both of each section as a separate bag-of-words text file (with words re-ordered alphabetically), and also with each section title and section contents in a single .csv file.
 
-2) Sub-sectioning:
+Note: if zero instances of the delimiter are present in a text, this code will return the entire contents of that text as one single document.
+
+2) Sub-sectioning the delimited prior sections of texts
 
 Some texts do not have regular delimiters, making sectioning on a delimiter impractical or impossible.  In other instances, long texts may only have a few instances of regular delimiters, resulting in sections that are still longer than desired.  Text data mining methods like topic modeling also work most reliably on sections of text that are roughly the same length - and book chapter length (for example) varies widely between books, and often even within one book.  Sub-sectioning standardizes document length for methods sensitive to this text attribute.
+
+If the 'use_subchapter' argument in the beginning of this code is set to TRUE, the code will instead perform two steps of analysis.  First, it will section texts based on the common delimiter (exactly as above).  
+
+Then, the code will separate longer chapters into subsections of equal length, based on the value of the 'subch_threshold' argument.  Word order is maintained at this point, to ensure that each subsection captures the first, second, third... through nth part of each section.  Short sections/chapters will be kept intact.
+
+Finally, as above, the word order is re-sorted from the order present in the text to alphabetic.
 
 3) Creating "Bags of Words" from consumable content for research
 
