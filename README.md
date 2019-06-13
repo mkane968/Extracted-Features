@@ -40,7 +40,7 @@ The Text_Disag_project folder contains a few elements:
 
 ### This code is useful for:
 
-1) *Sectioning texts* 
+1) __*Sectioning texts*__
 
 It is useful for many research purposes, such as topic modeling, to break texts into smaller pieces.  These methods often works more reliably, and give more accurate results, when applied to many smaller parts of a long text, rather than a few long but complete texts.
 
@@ -48,7 +48,7 @@ This code can separate one or more long text(s) into smaller pieces, based on a 
 
 Note: if zero instances of the delimiter are present in a text, this code will return the entire contents of that text as one single document.
 
-2) *Sub-sectioning the delimited texts*
+2) __*Sub-sectioning the delimited texts*__
 
 Some texts do not have regular delimiters, making sectioning on a delimiter impractical or impossible.  In other instances, long texts may only have a few instances of regular delimiters, resulting in sections that are still longer than desired.  Text data mining methods like topic modeling also work most reliably on sections of text that are roughly the same length - and book chapter length (for example) varies widely between books, and often even within one book.  Sub-sectioning standardizes document length for methods sensitive to this text attribute.
 
@@ -58,6 +58,6 @@ Then, the code will separate longer chapters into subsections of equal length, b
 
 Finally, as above, the word order is re-sorted from the order present in the text to alphabetic.
 
-3) *Generating subsections containing "Bags of Words" from consumable text data*
+3) __*Transforming text data into subsectioned "Bags of Words" texts and spreadsheets*__
 
 The functional forms of many text data analysis modeling methods (in particular, methods that work from a term-document-frequency matrix) ignore word order.  Also, while it is illegal to share copyrighted material in its consumable (that is, human-readable) form, it IS legal to share the 'extracted features' of these texts.  Word counts, presented as a term-document-frequency matrix or as disaggregated (disordered) word tokens (aka "bags of words"), qualify as one of these extracted features.  Therefore, the output of this code can be shared freely for research purposes in instances where the original texts themselves could not be.  This code is ideal for collaborative projects focused on analysis of copyrighted text for text data mining / cultural analytics purposes.
