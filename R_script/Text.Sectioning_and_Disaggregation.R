@@ -98,7 +98,7 @@ sec_delimiter <- "CHAPTER"
 #
 #
 ############################################ finally, remember(if you need) to (re) SET YOUR DIRECTORIES
-proj.dir <- "~/Desktop/Extracted-Features/"  
+proj.dir <- "~/Desktop/Extracted-Features-master/"  
 #@ where your project itself is (the parent folder for all others)
 #@ This lin makes an object with the name of your directory,
 #@ so that the directory can be reset to original location later on.  
